@@ -3,6 +3,11 @@
 # semantix-spark
 Projeto Java Spark Engenheiro de Dados
 
+Para rodar o projeto é necessário a instalação do lombok no eclipse, também necessário ter na pasta raiz do projeto os logs da NASA Kennedy encontrados nos links abaixo:
+
+ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz
+ftp://ita.ee.lbl.gov/traces/NASA_access_log_Aug95.gz
+
 	SEMANTIX
 
 1 - Qual o objetivo do comando cache em Spark?
@@ -13,7 +18,7 @@ O comando cache faz com que um RDD mantenha-se na memória disponível para os c
 
 O código implementado em Spark pode ser mais rápido pois o mesmo estende as funções do próprio MapReduce, seu desempenho é mais rápido pois armazena os dados em memória, caso a memoria ram não seja suficiente aí então se é utilizado o armazenamento em disco e seu processamento é quase em tempo real ao contrário do MapReduce que precisaria rodar vários jobs para execução de tarefas mais complexas e seu armazenamento é em disco.
 
-3 - Qual é a função do SparkContext​?
+3 - Qual é a função do SparkContext?
 
 É um objeto central do Spark que auxilia as aplicações Spark em um cluster (nós), com ele podemos ter acesso ao gerenciador de clusters, podendo fazer com que todos os nós tenham acesso ao determinado arquivo por exemplo.
 
@@ -38,5 +43,3 @@ Neste código, é lido um arquivo de texto a partir de um diretório especifico 
 É gerado um map (objeto chave e valor) sendo chave a "word" e valor o "1" criando um tipo de RDD (linha 3).
 E então é realizada a mescla dos valores criando um novo RDD (linha 4).
 E por último o RDD é salvo como um arquivo tipo texto em um diretório específico (linha 5).
-
-(obs.: ao tentar executar o código exibe o erro 'value split is not a member of Char', talvez por conta que utilizei compiladores web, mas caso o trecho de código acima funcione, seria basicamente o que faria segundo o meu entendimento).
