@@ -1,6 +1,7 @@
 package br.com.rnascimento.sematix.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -24,6 +25,6 @@ public class RequisicaoModel implements Serializable {
 	private String timestamp;
 	private String requisicao;
 	private String codigoRetornoHttp;
-	private String totalBytesRetornados;	
+	private BigDecimal totalBytesRetornados;	
 	
 }
