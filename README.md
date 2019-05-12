@@ -5,9 +5,31 @@ Projeto Java Spark Engenheiro de Dados
 
 Para rodar o projeto é necessário a instalação do lombok no eclipse, também necessário ter na pasta raiz do projeto os logs da NASA Kennedy encontrados nos links abaixo:
 
-ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz
+ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz - -
 ftp://ita.ee.lbl.gov/traces/NASA_access_log_Aug95.gz
 
+Algoritimo para responder algumas questões, tais como:
+
+1. Número de hosts únicos.
+2. O total de erros 404.
+3. Os 5 URLs que mais causaram erro 404.
+4. Quantidade de erros 404 por dia.
+5. O total de bytes retornados.
+
+R -
+1 -
+	NÚMERO DE HOSTS ÚNICOS PARA O ARQUIVO 'access_log_Aug95': 75060
+	NÚMERO DE HOSTS ÚNICOS PARA O ARQUIVO 'access_log_Jul95': 81983
+2 -
+	O TOTAL DE ERROS 404 PARA O ARQUIVO 'access_log_Aug95': 9973
+	O TOTAL DE ERROS 404 PARA O ARQUIVO 'access_log_Jul95': 10713
+3 -
+	
+4 -
+	
+5 -
+	
+	
 	SEMANTIX
 
 1 - Qual o objetivo do comando cache em Spark?
