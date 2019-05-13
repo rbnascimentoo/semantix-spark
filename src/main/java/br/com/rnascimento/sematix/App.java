@@ -3,12 +3,14 @@ package br.com.rnascimento.sematix;
 import java.math.BigDecimal;
 
 import org.apache.spark.SparkConf;
+import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function2;
 
 import br.com.rnascimento.semantix.converter.RequisicaoModelConverter;
 import br.com.rnascimento.sematix.model.RequisicaoModel;
+import scala.Tuple1;
 
 /**
  * 
@@ -80,7 +82,7 @@ public class App {
 	 * @param nomeArquivo
 	 */
 	private static void obterQtdErroDia(JavaRDD<RequisicaoModel> rddRequisicaoModel, String nomeArquivo) {
-		
+		JavaRDD<String> dias = rddRequisicaoModel.map(m -> m.getTimestamp().split("[")[1].split(":")[0]);
 	}
 
 	/**
