@@ -7,6 +7,10 @@ import org.apache.commons.lang3.math.NumberUtils;
 
 import br.com.rnascimento.sematix.model.RequisicaoModel;
 
+/**
+ * class RequisicaoModelConverter
+ *
+ */
 public class RequisicaoModelConverter {
 	
 	/**
@@ -46,7 +50,7 @@ public class RequisicaoModelConverter {
 				requisicaoModelRetorno.setCodigoRetornoHttp(isNull(object, i));
 				break;
 			case 9:
-				requisicaoModelRetorno.setTotalBytesRetornados(transformarValor(isNull(object, i)));
+				requisicaoModelRetorno.setTotalBytesRetornados(converterValor(isNull(object, i)));
 				break;
 			default:
 				break;
@@ -56,7 +60,7 @@ public class RequisicaoModelConverter {
 	}
 	
 	/**
-	 * 
+	 * Verifica se é Nulo
 	 * 
 	 * @param object
 	 * @param i
@@ -67,12 +71,12 @@ public class RequisicaoModelConverter {
 	}
 	
 	/**
-	 * verifica se a string passada é um número
+	 * Verifica se a string passada é um número
 	 * 
 	 * @param valor
 	 * @return
 	 */
-	private static BigDecimal transformarValor(String valor) {
+	private static BigDecimal converterValor(String valor) {
 		if (NumberUtils.isCreatable(valor)) {
 			return new BigDecimal(valor);
 		}
