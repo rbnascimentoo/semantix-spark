@@ -16,7 +16,7 @@ Algoritimo para responder algumas questões, tais como:
 4. Quantidade de erros 404 por dia.
 5. O total de bytes retornados.
 
-R -
+R -		
 1 -
 	NÚMERO DE HOSTS ÚNICOS PARA O ARQUIVO 'access_log_Aug95': 75060
 	NÚMERO DE HOSTS ÚNICOS PARA O ARQUIVO 'access_log_Jul95': 81983
@@ -25,7 +25,9 @@ R -
 	O TOTAL DE ERROS 404 PARA O ARQUIVO 'access_log_Jul95': 10713
 3 -
 	
+	
 4 -
+	
 	
 5 -
 	O TOTAL DE BYTES RETORNADOS PARA O ARQUIVO 'access_log_Aug95' É: 26677328516
